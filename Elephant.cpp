@@ -1,13 +1,14 @@
-#include <iostream>
-using namespace std ;
-int main ()
-{
-	int n , a ;
-	cin >> n ;
-	a = n / 5 ;
-	if ( n % 5 != 0 )
-	{
-		a += 1 ;
+#include<bits/stdc++.h>
+using namespace std;
+
+int main(){
+	int n;
+	cin >> n;
+	
+	if(n%5 == 0){
+		cout << n/5 << endl;
 	}
-	cout << a <<"\n";
+	else{
+		cout << (int)n/5 + 1 << endl;
+	}
 }
